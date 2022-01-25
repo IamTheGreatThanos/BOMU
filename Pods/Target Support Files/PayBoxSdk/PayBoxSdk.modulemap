@@ -1,0 +1,6 @@
+framework module PayBoxSdk {
+  umbrella header "PayBoxSdk-umbrella.h"
+
+  export *
+  module * { export * }
+}

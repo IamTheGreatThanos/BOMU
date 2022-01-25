@@ -1,0 +1,12 @@
+ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/Alamofire" "${PODS_CONFIGURATION_BUILD_DIR}/CGMath" "${PODS_CONFIGURATION_BUILD_DIR}/FBSDKCoreKit" "${PODS_CONFIGURATION_BUILD_DIR}/FBSDKLoginKit" "${PODS_CONFIGURATION_BUILD_DIR}/FBSDKPlacesKit" "${PODS_CONFIGURATION_BUILD_DIR}/FBSDKShareKit" "${PODS_CONFIGURATION_BUILD_DIR}/FloatingTabBarController" "${PODS_CONFIGURATION_BUILD_DIR}/Kingfisher" "${PODS_CONFIGURATION_BUILD_DIR}/PayBoxSdk" "${PODS_CONFIGURATION_BUILD_DIR}/SwiftyJSON"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1 $(inherited) FBSDKCOCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/Alamofire/Alamofire.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/CGMath/CGMath.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/FBSDKPlacesKit/FBSDKPlacesKit.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/FBSDKShareKit/FBSDKShareKit.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/FloatingTabBarController/FloatingTabBarController.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/Kingfisher/Kingfisher.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/PayBoxSdk/PayBoxSdk.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/SwiftyJSON/SwiftyJSON.framework/Headers"
+LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
+OTHER_LDFLAGS = $(inherited) -l"c++" -l"stdc++" -l"z" -framework "Accelerate" -framework "Alamofire" -framework "CFNetwork" -framework "CGMath" -framework "CoreGraphics" -framework "FBSDKCoreKit" -framework "FBSDKLoginKit" -framework "FBSDKPlacesKit" -framework "FBSDKShareKit" -framework "FloatingTabBarController" -framework "Kingfisher" -framework "PayBoxSdk" -framework "SwiftyJSON" -weak_framework "Accelerate" -weak_framework "Accounts" -weak_framework "AudioToolbox" -weak_framework "CoreGraphics" -weak_framework "CoreLocation" -weak_framework "Foundation" -weak_framework "QuartzCore" -weak_framework "Security" -weak_framework "Social" -weak_framework "UIKit"
+OTHER_SWIFT_FLAGS = $(inherited) -D COCOAPODS
+PODS_BUILD_DIR = ${BUILD_DIR}
+PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+PODS_PODFILE_DIR_PATH = ${SRCROOT}/.
+PODS_ROOT = ${SRCROOT}/Pods
+USE_RECURSIVE_SCRIPT_INPUTS_IN_SCRIPT_PHASES = YES

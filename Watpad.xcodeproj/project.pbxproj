@@ -3,33 +3,214 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		62D37A5815901F041DCBF19D /* Pods_Watpad.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFBE5043029E732912D43FD7 /* Pods_Watpad.framework */; };
+		8803CF98256C298B003F8215 /* WelcomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8803CF97256C298B003F8215 /* WelcomeController.swift */; };
+		880660ED253499BA00ECC4F2 /* Tab1BookTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880660EC253499BA00ECC4F2 /* Tab1BookTableViewCell.swift */; };
+		8821A3A7255A7AC100A35702 /* BookInfoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8821A3A6255A7AC100A35702 /* BookInfoCollectionViewCell.swift */; };
+		8821A3AA255A826000A35702 /* EditTextController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8821A3A9255A826000A35702 /* EditTextController.swift */; };
+		88422A20252474A9000889DF /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88422A1F252474A9000889DF /* LoginController.swift */; };
+		88422A2325247906000889DF /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88422A2225247906000889DF /* RegistrationController.swift */; };
+		88422A2525247C8B000889DF /* PasswordRecoveryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88422A2425247C8B000889DF /* PasswordRecoveryController.swift */; };
+		884EBF9D25666E7E00A9E4AA /* DesignOfView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884EBF9C25666E7E00A9E4AA /* DesignOfView.swift */; };
 		8858CE0F25246A8500C246F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8858CE0E25246A8500C246F6 /* AppDelegate.swift */; };
-		8858CE1125246A8500C246F6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8858CE1025246A8500C246F6 /* SceneDelegate.swift */; };
 		8858CE1325246A8500C246F6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8858CE1225246A8500C246F6 /* ViewController.swift */; };
 		8858CE1625246A8500C246F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8858CE1425246A8500C246F6 /* Main.storyboard */; };
 		8858CE1925246A8500C246F6 /* Watpad.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8858CE1725246A8500C246F6 /* Watpad.xcdatamodeld */; };
 		8858CE1B25246A8800C246F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8858CE1A25246A8800C246F6 /* Assets.xcassets */; };
 		8858CE1E25246A8800C246F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8858CE1C25246A8800C246F6 /* LaunchScreen.storyboard */; };
+		8858CE2625246C2A00C246F6 /* UserDefaultsKeys in Resources */ = {isa = PBXBuildFile; fileRef = 8858CE2525246C2A00C246F6 /* UserDefaultsKeys */; };
+		8858CE2825246C4700C246F6 /* GlobalVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8858CE2725246C4700C246F6 /* GlobalVariables.swift */; };
+		8858CE2A25246C8400C246F6 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8858CE2925246C8400C246F6 /* Extensions.swift */; };
+		8858CE40252470D400C246F6 /* Montserrat-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8858CE2D252470D400C246F6 /* Montserrat-LightItalic.ttf */; };
+		8858CE41252470D400C246F6 /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8858CE2E252470D400C246F6 /* Montserrat-Medium.ttf */; };
+		8858CE42252470D400C246F6 /* Montserrat-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8858CE2F252470D400C246F6 /* Montserrat-BoldItalic.ttf */; };
+		8858CE43252470D400C246F6 /* Montserrat-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8858CE30252470D400C246F6 /* Montserrat-Light.ttf */; };
+		8858CE44252470D400C246F6 /* Montserrat-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8858CE31252470D400C246F6 /* Montserrat-ThinItalic.ttf */; };
+		8858CE45252470D400C246F6 /* Montserrat-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8858CE32252470D400C246F6 /* Montserrat-ExtraLight.ttf */; };
+		8858CE46252470D400C246F6 /* Montserrat-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8858CE33252470D400C246F6 /* Montserrat-Thin.ttf */; };
+		8858CE47252470D400C246F6 /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8858CE34252470D400C246F6 /* Montserrat-Bold.ttf */; };
+		8858CE48252470D400C246F6 /* Montserrat-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8858CE35252470D400C246F6 /* Montserrat-MediumItalic.ttf */; };
+		8858CE49252470D400C246F6 /* Montserrat-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8858CE36252470D400C246F6 /* Montserrat-BlackItalic.ttf */; };
+		8858CE4A252470D400C246F6 /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8858CE37252470D400C246F6 /* Montserrat-SemiBold.ttf */; };
+		8858CE4B252470D400C246F6 /* Montserrat-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8858CE38252470D400C246F6 /* Montserrat-ExtraLightItalic.ttf */; };
+		8858CE4C252470D400C246F6 /* Montserrat-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8858CE39252470D400C246F6 /* Montserrat-ExtraBold.ttf */; };
+		8858CE4D252470D400C246F6 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8858CE3A252470D400C246F6 /* OFL.txt */; };
+		8858CE4E252470D400C246F6 /* Montserrat-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8858CE3B252470D400C246F6 /* Montserrat-Black.ttf */; };
+		8858CE4F252470D400C246F6 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8858CE3C252470D400C246F6 /* Montserrat-Regular.ttf */; };
+		8858CE50252470D400C246F6 /* Montserrat-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8858CE3D252470D400C246F6 /* Montserrat-Italic.ttf */; };
+		8858CE51252470D400C246F6 /* Montserrat-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8858CE3E252470D400C246F6 /* Montserrat-SemiBoldItalic.ttf */; };
+		8858CE52252470D400C246F6 /* Montserrat-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8858CE3F252470D400C246F6 /* Montserrat-ExtraBoldItalic.ttf */; };
+		88640C9225321B0C00DEEF0A /* Tab3Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88640C9125321B0C00DEEF0A /* Tab3Controller.swift */; };
+		88640C9525321B2000DEEF0A /* Tab1Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88640C9425321B2000DEEF0A /* Tab1Controller.swift */; };
+		88640C9825321B2300DEEF0A /* Tab2Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88640C9725321B2300DEEF0A /* Tab2Controller.swift */; };
+		88640CA125321B9D00DEEF0A /* Tab2BookCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88640CA025321B9D00DEEF0A /* Tab2BookCollectionViewCell.swift */; };
+		88694E8D2549CD2200E9AA83 /* MyBookChapterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88694E8C2549CD2200E9AA83 /* MyBookChapterTableViewCell.swift */; };
+		8880B1352533788A00A78747 /* Tab1BookCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8880B1342533788A00A78747 /* Tab1BookCollectionViewCell.swift */; };
+		8880B1382533789E00A78747 /* Tab1CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8880B1372533789E00A78747 /* Tab1CategoryCollectionViewCell.swift */; };
+		8880D3442545F0210049DC90 /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8880D3432545F0210049DC90 /* MainNavigationController.swift */; };
+		8880D3472545F17B0049DC90 /* ReadingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8880D3462545F17B0049DC90 /* ReadingController.swift */; };
+		8880D34A2545F2280049DC90 /* ReadingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8880D3492545F2280049DC90 /* ReadingTableViewCell.swift */; };
+		8880D34D2545F5F90049DC90 /* NotesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8880D34C2545F5F90049DC90 /* NotesController.swift */; };
+		8880D3502545F6260049DC90 /* NotesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8880D34F2545F6260049DC90 /* NotesTableViewCell.swift */; };
+		888B71CE2530B68B009F62F1 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888B71CD2530B68B009F62F1 /* TabBarController.swift */; };
+		888CB43F254FD03A0019572D /* BookInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888CB43E254FD03A0019572D /* BookInfoController.swift */; };
+		888CB442254FD21D0019572D /* BookInfoChaptersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888CB441254FD21D0019572D /* BookInfoChaptersTableViewCell.swift */; };
+		888CB44525501A4F0019572D /* AuthorInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888CB44425501A4F0019572D /* AuthorInfoController.swift */; };
+		888CB44825501D3D0019572D /* AuthorInfoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888CB44725501D3D0019572D /* AuthorInfoCollectionViewCell.swift */; };
+		889B88BF252481E80013F524 /* ValidationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889B88BE252481E80013F524 /* ValidationController.swift */; };
+		88A2EFB025612DC300E3233D /* CategoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A2EFAF25612DC300E3233D /* CategoryController.swift */; };
+		88A2EFB325612ED600E3233D /* CategoryControllerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A2EFB225612ED600E3233D /* CategoryControllerTableViewCell.swift */; };
+		88A2EFBA2561BA1900E3233D /* MusicCardViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A2EFB92561BA1900E3233D /* MusicCardViewTableViewCell.swift */; };
+		88A417742555977A00DADA53 /* TextController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A417732555977A00DADA53 /* TextController.swift */; };
+		88A417772555BFF700DADA53 /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A417762555BFF700DADA53 /* CardViewController.swift */; };
+		88A4177A2555D2E400DADA53 /* ChooseMusicController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A417792555D2E400DADA53 /* ChooseMusicController.swift */; };
+		88AA98632542FB5F00772FE8 /* EditProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88AA98622542FB5F00772FE8 /* EditProfileController.swift */; };
+		88B918D42546CE8C00CCB13E /* categories.json in Resources */ = {isa = PBXBuildFile; fileRef = 88B918D32546CE8C00CCB13E /* categories.json */; };
+		88BF4C7B2570DE9900B8C265 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BF4C7A2570DE9900B8C265 /* ShareViewController.swift */; };
+		88BF4C7E2570DE9900B8C265 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88BF4C7C2570DE9900B8C265 /* MainInterface.storyboard */; };
+		88BF4C822570DE9900B8C265 /* ShareExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 88BF4C782570DE9900B8C265 /* ShareExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		88C2E8E0259CFFF00076915F /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88C2E8DF259CFFF00076915F /* StoreKit.framework */; };
+		88D46F33255D050F0050CA47 /* SpotifyAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88D46F30255D050D0050CA47 /* SpotifyAuthentication.framework */; };
+		88D46F34255D050F0050CA47 /* SpotifyMetadata.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88D46F31255D050E0050CA47 /* SpotifyMetadata.framework */; };
+		88D46F35255D050F0050CA47 /* SpotifyAudioPlayback.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88D46F32255D050F0050CA47 /* SpotifyAudioPlayback.framework */; };
+		88D46F3D255D6CFD0050CA47 /* ChooseMusicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D46F3C255D6CFD0050CA47 /* ChooseMusicTableViewCell.swift */; };
+		88D46F432560539D0050CA47 /* SpotifyiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88D46F422560539D0050CA47 /* SpotifyiOS.framework */; };
+		88E6956025474F4400FC9491 /* CreateBookController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E6955F25474F4400FC9491 /* CreateBookController.swift */; };
+		88EA032125497645004CA574 /* EditMyBookChaptersController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EA032025497645004CA574 /* EditMyBookChaptersController.swift */; };
+		88EEDCEC255C38C600096B00 /* ChaptersInCardViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EEDCEB255C38C600096B00 /* ChaptersInCardViewTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		88BF4C802570DE9900B8C265 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8858CE0325246A8500C246F6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 88BF4C772570DE9900B8C265;
+			remoteInfo = ShareExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		88BF4C60256FB32700B8C265 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				88BF4C822570DE9900B8C265 /* ShareExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		8803CF97256C298B003F8215 /* WelcomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeController.swift; sourceTree = "<group>"; };
+		880660EC253499BA00ECC4F2 /* Tab1BookTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab1BookTableViewCell.swift; sourceTree = "<group>"; };
+		8821A3A6255A7AC100A35702 /* BookInfoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookInfoCollectionViewCell.swift; sourceTree = "<group>"; };
+		8821A3A9255A826000A35702 /* EditTextController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTextController.swift; sourceTree = "<group>"; };
+		88251D012572675100A391CF /* ru */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = ru; path = ru.lproj/Main.storyboard; sourceTree = "<group>"; };
+		88422A1F252474A9000889DF /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		88422A2225247906000889DF /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
+		88422A2425247C8B000889DF /* PasswordRecoveryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordRecoveryController.swift; sourceTree = "<group>"; };
+		884EBF9C25666E7E00A9E4AA /* DesignOfView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignOfView.swift; sourceTree = "<group>"; };
 		8858CE0B25246A8500C246F6 /* Watpad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Watpad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8858CE0E25246A8500C246F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8858CE1025246A8500C246F6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		8858CE1225246A8500C246F6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8858CE1525246A8500C246F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8858CE1825246A8500C246F6 /* Watpad.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Watpad.xcdatamodel; sourceTree = "<group>"; };
 		8858CE1A25246A8800C246F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8858CE1D25246A8800C246F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8858CE1F25246A8800C246F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8858CE2525246C2A00C246F6 /* UserDefaultsKeys */ = {isa = PBXFileReference; lastKnownFileType = text; path = UserDefaultsKeys; sourceTree = "<group>"; };
+		8858CE2725246C4700C246F6 /* GlobalVariables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalVariables.swift; sourceTree = "<group>"; };
+		8858CE2925246C8400C246F6 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		8858CE2D252470D400C246F6 /* Montserrat-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-LightItalic.ttf"; sourceTree = "<group>"; };
+		8858CE2E252470D400C246F6 /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
+		8858CE2F252470D400C246F6 /* Montserrat-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-BoldItalic.ttf"; sourceTree = "<group>"; };
+		8858CE30252470D400C246F6 /* Montserrat-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Light.ttf"; sourceTree = "<group>"; };
+		8858CE31252470D400C246F6 /* Montserrat-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ThinItalic.ttf"; sourceTree = "<group>"; };
+		8858CE32252470D400C246F6 /* Montserrat-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraLight.ttf"; sourceTree = "<group>"; };
+		8858CE33252470D400C246F6 /* Montserrat-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Thin.ttf"; sourceTree = "<group>"; };
+		8858CE34252470D400C246F6 /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
+		8858CE35252470D400C246F6 /* Montserrat-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-MediumItalic.ttf"; sourceTree = "<group>"; };
+		8858CE36252470D400C246F6 /* Montserrat-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-BlackItalic.ttf"; sourceTree = "<group>"; };
+		8858CE37252470D400C246F6 /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
+		8858CE38252470D400C246F6 /* Montserrat-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		8858CE39252470D400C246F6 /* Montserrat-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraBold.ttf"; sourceTree = "<group>"; };
+		8858CE3A252470D400C246F6 /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		8858CE3B252470D400C246F6 /* Montserrat-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Black.ttf"; sourceTree = "<group>"; };
+		8858CE3C252470D400C246F6 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		8858CE3D252470D400C246F6 /* Montserrat-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Italic.ttf"; sourceTree = "<group>"; };
+		8858CE3E252470D400C246F6 /* Montserrat-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		8858CE3F252470D400C246F6 /* Montserrat-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		88640C9125321B0C00DEEF0A /* Tab3Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab3Controller.swift; sourceTree = "<group>"; };
+		88640C9425321B2000DEEF0A /* Tab1Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab1Controller.swift; sourceTree = "<group>"; };
+		88640C9725321B2300DEEF0A /* Tab2Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab2Controller.swift; sourceTree = "<group>"; };
+		88640CA025321B9D00DEEF0A /* Tab2BookCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab2BookCollectionViewCell.swift; sourceTree = "<group>"; };
+		88694E8C2549CD2200E9AA83 /* MyBookChapterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBookChapterTableViewCell.swift; sourceTree = "<group>"; };
+		8880B1342533788A00A78747 /* Tab1BookCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab1BookCollectionViewCell.swift; sourceTree = "<group>"; };
+		8880B1372533789E00A78747 /* Tab1CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab1CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		8880D3432545F0210049DC90 /* MainNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
+		8880D3462545F17B0049DC90 /* ReadingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingController.swift; sourceTree = "<group>"; };
+		8880D3492545F2280049DC90 /* ReadingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingTableViewCell.swift; sourceTree = "<group>"; };
+		8880D34C2545F5F90049DC90 /* NotesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesController.swift; sourceTree = "<group>"; };
+		8880D34F2545F6260049DC90 /* NotesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesTableViewCell.swift; sourceTree = "<group>"; };
+		888B71CD2530B68B009F62F1 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		888CB43E254FD03A0019572D /* BookInfoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookInfoController.swift; sourceTree = "<group>"; };
+		888CB441254FD21D0019572D /* BookInfoChaptersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookInfoChaptersTableViewCell.swift; sourceTree = "<group>"; };
+		888CB44425501A4F0019572D /* AuthorInfoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorInfoController.swift; sourceTree = "<group>"; };
+		888CB44725501D3D0019572D /* AuthorInfoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorInfoCollectionViewCell.swift; sourceTree = "<group>"; };
+		889B88BE252481E80013F524 /* ValidationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationController.swift; sourceTree = "<group>"; };
+		88A2EFAF25612DC300E3233D /* CategoryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryController.swift; sourceTree = "<group>"; };
+		88A2EFB225612ED600E3233D /* CategoryControllerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryControllerTableViewCell.swift; sourceTree = "<group>"; };
+		88A2EFB52561614700E3233D /* Watpad-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Watpad-Bridging-Header.h"; sourceTree = "<group>"; };
+		88A2EFB92561BA1900E3233D /* MusicCardViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicCardViewTableViewCell.swift; sourceTree = "<group>"; };
+		88A417732555977A00DADA53 /* TextController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextController.swift; sourceTree = "<group>"; };
+		88A417762555BFF700DADA53 /* CardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
+		88A417792555D2E400DADA53 /* ChooseMusicController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseMusicController.swift; sourceTree = "<group>"; };
+		88AA98622542FB5F00772FE8 /* EditProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileController.swift; sourceTree = "<group>"; };
+		88B918D32546CE8C00CCB13E /* categories.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = categories.json; sourceTree = "<group>"; };
+		88BF4C64256FB58000B8C265 /* Watpad.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Watpad.entitlements; sourceTree = "<group>"; };
+		88BF4C782570DE9900B8C265 /* ShareExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ShareExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		88BF4C7A2570DE9900B8C265 /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		88BF4C7D2570DE9900B8C265 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		88BF4C7F2570DE9900B8C265 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88BF4C882570DFDE00B8C265 /* ShareExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ShareExtension.entitlements; sourceTree = "<group>"; };
+		88C2E8DF259CFFF00076915F /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		88D46F30255D050D0050CA47 /* SpotifyAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyAuthentication.framework; sourceTree = "<group>"; };
+		88D46F31255D050E0050CA47 /* SpotifyMetadata.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyMetadata.framework; sourceTree = "<group>"; };
+		88D46F32255D050F0050CA47 /* SpotifyAudioPlayback.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyAudioPlayback.framework; sourceTree = "<group>"; };
+		88D46F37255D06E80050CA47 /* Spotify.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Spotify.h; sourceTree = "<group>"; };
+		88D46F3C255D6CFD0050CA47 /* ChooseMusicTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseMusicTableViewCell.swift; sourceTree = "<group>"; };
+		88D46F422560539D0050CA47 /* SpotifyiOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyiOS.framework; sourceTree = "<group>"; };
+		88E6955F25474F4400FC9491 /* CreateBookController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateBookController.swift; sourceTree = "<group>"; };
+		88EA032025497645004CA574 /* EditMyBookChaptersController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditMyBookChaptersController.swift; sourceTree = "<group>"; };
+		88EEDCEB255C38C600096B00 /* ChaptersInCardViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChaptersInCardViewTableViewCell.swift; sourceTree = "<group>"; };
+		AFBE5043029E732912D43FD7 /* Pods_Watpad.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Watpad.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E34EE5B508CB8213E285973E /* Pods-Watpad.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Watpad.release.xcconfig"; path = "Target Support Files/Pods-Watpad/Pods-Watpad.release.xcconfig"; sourceTree = "<group>"; };
+		E700390A5C6B40722911F131 /* Pods-Watpad.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Watpad.debug.xcconfig"; path = "Target Support Files/Pods-Watpad/Pods-Watpad.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		8858CE0825246A8500C246F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88D46F432560539D0050CA47 /* SpotifyiOS.framework in Frameworks */,
+				62D37A5815901F041DCBF19D /* Pods_Watpad.framework in Frameworks */,
+				88D46F35255D050F0050CA47 /* SpotifyAudioPlayback.framework in Frameworks */,
+				88C2E8E0259CFFF00076915F /* StoreKit.framework in Frameworks */,
+				88D46F34255D050F0050CA47 /* SpotifyMetadata.framework in Frameworks */,
+				88D46F33255D050F0050CA47 /* SpotifyAuthentication.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88BF4C752570DE9900B8C265 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,11 +220,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		47D5587B0CD59CC665A44B4E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				88C2E8DF259CFFF00076915F /* StoreKit.framework */,
+				AFBE5043029E732912D43FD7 /* Pods_Watpad.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		88422A212524754C000889DF /* Authorization */ = {
+			isa = PBXGroup;
+			children = (
+				88422A1F252474A9000889DF /* LoginController.swift */,
+				88422A2225247906000889DF /* RegistrationController.swift */,
+				88422A2425247C8B000889DF /* PasswordRecoveryController.swift */,
+				889B88BE252481E80013F524 /* ValidationController.swift */,
+			);
+			path = Authorization;
+			sourceTree = "<group>";
+		};
 		8858CE0225246A8500C246F6 = {
 			isa = PBXGroup;
 			children = (
 				8858CE0D25246A8500C246F6 /* Watpad */,
+				88BF4C792570DE9900B8C265 /* ShareExtension */,
 				8858CE0C25246A8500C246F6 /* Products */,
+				BDF38D6BD68A939F63D65B0F /* Pods */,
+				47D5587B0CD59CC665A44B4E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,6 +255,7 @@
 			isa = PBXGroup;
 			children = (
 				8858CE0B25246A8500C246F6 /* Watpad.app */,
+				88BF4C782570DE9900B8C265 /* ShareExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,16 +263,147 @@
 		8858CE0D25246A8500C246F6 /* Watpad */ = {
 			isa = PBXGroup;
 			children = (
+				88BF4C64256FB58000B8C265 /* Watpad.entitlements */,
+				88AA98612542FB4B00772FE8 /* Tab3 */,
+				88AA98602542FB4300772FE8 /* Tab2 */,
+				88AA985F2542FB3A00772FE8 /* Tab1 */,
+				888B71CC2530B674009F62F1 /* TabBar */,
+				88422A212524754C000889DF /* Authorization */,
+				8858CE2B252470D400C246F6 /* Fonts */,
 				8858CE0E25246A8500C246F6 /* AppDelegate.swift */,
-				8858CE1025246A8500C246F6 /* SceneDelegate.swift */,
 				8858CE1225246A8500C246F6 /* ViewController.swift */,
 				8858CE1425246A8500C246F6 /* Main.storyboard */,
 				8858CE1A25246A8800C246F6 /* Assets.xcassets */,
 				8858CE1C25246A8800C246F6 /* LaunchScreen.storyboard */,
 				8858CE1F25246A8800C246F6 /* Info.plist */,
 				8858CE1725246A8500C246F6 /* Watpad.xcdatamodeld */,
+				8858CE2525246C2A00C246F6 /* UserDefaultsKeys */,
+				88B918D32546CE8C00CCB13E /* categories.json */,
+				8858CE2725246C4700C246F6 /* GlobalVariables.swift */,
+				8858CE2925246C8400C246F6 /* Extensions.swift */,
+				8880D3432545F0210049DC90 /* MainNavigationController.swift */,
+				88E6955F25474F4400FC9491 /* CreateBookController.swift */,
+				88EA032025497645004CA574 /* EditMyBookChaptersController.swift */,
+				88694E8C2549CD2200E9AA83 /* MyBookChapterTableViewCell.swift */,
+				888CB43E254FD03A0019572D /* BookInfoController.swift */,
+				888CB441254FD21D0019572D /* BookInfoChaptersTableViewCell.swift */,
+				888CB44425501A4F0019572D /* AuthorInfoController.swift */,
+				888CB44725501D3D0019572D /* AuthorInfoCollectionViewCell.swift */,
+				88A417732555977A00DADA53 /* TextController.swift */,
+				88A417762555BFF700DADA53 /* CardViewController.swift */,
+				88A417792555D2E400DADA53 /* ChooseMusicController.swift */,
+				8821A3A6255A7AC100A35702 /* BookInfoCollectionViewCell.swift */,
+				8821A3A9255A826000A35702 /* EditTextController.swift */,
+				88EEDCEB255C38C600096B00 /* ChaptersInCardViewTableViewCell.swift */,
+				88D46F37255D06E80050CA47 /* Spotify.h */,
+				88D46F422560539D0050CA47 /* SpotifyiOS.framework */,
+				88D46F32255D050F0050CA47 /* SpotifyAudioPlayback.framework */,
+				88D46F30255D050D0050CA47 /* SpotifyAuthentication.framework */,
+				88D46F31255D050E0050CA47 /* SpotifyMetadata.framework */,
+				88D46F3C255D6CFD0050CA47 /* ChooseMusicTableViewCell.swift */,
+				88A2EFAF25612DC300E3233D /* CategoryController.swift */,
+				88A2EFB225612ED600E3233D /* CategoryControllerTableViewCell.swift */,
+				88A2EFB52561614700E3233D /* Watpad-Bridging-Header.h */,
+				88A2EFB92561BA1900E3233D /* MusicCardViewTableViewCell.swift */,
+				884EBF9C25666E7E00A9E4AA /* DesignOfView.swift */,
+				8803CF97256C298B003F8215 /* WelcomeController.swift */,
 			);
 			path = Watpad;
+			sourceTree = "<group>";
+		};
+		8858CE2B252470D400C246F6 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				8858CE2C252470D400C246F6 /* Montserrat */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		8858CE2C252470D400C246F6 /* Montserrat */ = {
+			isa = PBXGroup;
+			children = (
+				8858CE2D252470D400C246F6 /* Montserrat-LightItalic.ttf */,
+				8858CE2E252470D400C246F6 /* Montserrat-Medium.ttf */,
+				8858CE2F252470D400C246F6 /* Montserrat-BoldItalic.ttf */,
+				8858CE30252470D400C246F6 /* Montserrat-Light.ttf */,
+				8858CE31252470D400C246F6 /* Montserrat-ThinItalic.ttf */,
+				8858CE32252470D400C246F6 /* Montserrat-ExtraLight.ttf */,
+				8858CE33252470D400C246F6 /* Montserrat-Thin.ttf */,
+				8858CE34252470D400C246F6 /* Montserrat-Bold.ttf */,
+				8858CE35252470D400C246F6 /* Montserrat-MediumItalic.ttf */,
+				8858CE36252470D400C246F6 /* Montserrat-BlackItalic.ttf */,
+				8858CE37252470D400C246F6 /* Montserrat-SemiBold.ttf */,
+				8858CE38252470D400C246F6 /* Montserrat-ExtraLightItalic.ttf */,
+				8858CE39252470D400C246F6 /* Montserrat-ExtraBold.ttf */,
+				8858CE3A252470D400C246F6 /* OFL.txt */,
+				8858CE3B252470D400C246F6 /* Montserrat-Black.ttf */,
+				8858CE3C252470D400C246F6 /* Montserrat-Regular.ttf */,
+				8858CE3D252470D400C246F6 /* Montserrat-Italic.ttf */,
+				8858CE3E252470D400C246F6 /* Montserrat-SemiBoldItalic.ttf */,
+				8858CE3F252470D400C246F6 /* Montserrat-ExtraBoldItalic.ttf */,
+			);
+			path = Montserrat;
+			sourceTree = "<group>";
+		};
+		888B71CC2530B674009F62F1 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				888B71CD2530B68B009F62F1 /* TabBarController.swift */,
+				88640C9425321B2000DEEF0A /* Tab1Controller.swift */,
+				88640C9725321B2300DEEF0A /* Tab2Controller.swift */,
+				88640C9125321B0C00DEEF0A /* Tab3Controller.swift */,
+				88640CA025321B9D00DEEF0A /* Tab2BookCollectionViewCell.swift */,
+				8880B1342533788A00A78747 /* Tab1BookCollectionViewCell.swift */,
+				8880B1372533789E00A78747 /* Tab1CategoryCollectionViewCell.swift */,
+				880660EC253499BA00ECC4F2 /* Tab1BookTableViewCell.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		88AA985F2542FB3A00772FE8 /* Tab1 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tab1;
+			sourceTree = "<group>";
+		};
+		88AA98602542FB4300772FE8 /* Tab2 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tab2;
+			sourceTree = "<group>";
+		};
+		88AA98612542FB4B00772FE8 /* Tab3 */ = {
+			isa = PBXGroup;
+			children = (
+				88AA98622542FB5F00772FE8 /* EditProfileController.swift */,
+				8880D3462545F17B0049DC90 /* ReadingController.swift */,
+				8880D3492545F2280049DC90 /* ReadingTableViewCell.swift */,
+				8880D34C2545F5F90049DC90 /* NotesController.swift */,
+				8880D34F2545F6260049DC90 /* NotesTableViewCell.swift */,
+			);
+			path = Tab3;
+			sourceTree = "<group>";
+		};
+		88BF4C792570DE9900B8C265 /* ShareExtension */ = {
+			isa = PBXGroup;
+			children = (
+				88BF4C882570DFDE00B8C265 /* ShareExtension.entitlements */,
+				88BF4C7A2570DE9900B8C265 /* ShareViewController.swift */,
+				88BF4C7C2570DE9900B8C265 /* MainInterface.storyboard */,
+				88BF4C7F2570DE9900B8C265 /* Info.plist */,
+			);
+			path = ShareExtension;
+			sourceTree = "<group>";
+		};
+		BDF38D6BD68A939F63D65B0F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E700390A5C6B40722911F131 /* Pods-Watpad.debug.xcconfig */,
+				E34EE5B508CB8213E285973E /* Pods-Watpad.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,18 +413,39 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8858CE2225246A8800C246F6 /* Build configuration list for PBXNativeTarget "Watpad" */;
 			buildPhases = (
+				27EE6D479EC210BA5971C8D3 /* [CP] Check Pods Manifest.lock */,
 				8858CE0725246A8500C246F6 /* Sources */,
 				8858CE0825246A8500C246F6 /* Frameworks */,
 				8858CE0925246A8500C246F6 /* Resources */,
+				74E4D41C9E812F2A43409BD6 /* [CP] Embed Pods Frameworks */,
+				88BF4C60256FB32700B8C265 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				88BF4C812570DE9900B8C265 /* PBXTargetDependency */,
 			);
 			name = Watpad;
 			productName = Watpad;
 			productReference = 8858CE0B25246A8500C246F6 /* Watpad.app */;
 			productType = "com.apple.product-type.application";
+		};
+		88BF4C772570DE9900B8C265 /* ShareExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88BF4C832570DE9A00B8C265 /* Build configuration list for PBXNativeTarget "ShareExtension" */;
+			buildPhases = (
+				88BF4C742570DE9900B8C265 /* Sources */,
+				88BF4C752570DE9900B8C265 /* Frameworks */,
+				88BF4C762570DE9900B8C265 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShareExtension;
+			productName = ShareExtension;
+			productReference = 88BF4C782570DE9900B8C265 /* ShareExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -96,12 +453,15 @@
 		8858CE0325246A8500C246F6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1160;
+				LastSwiftUpdateCheck = 1200;
 				LastUpgradeCheck = 1160;
 				ORGANIZATIONNAME = XCode;
 				TargetAttributes = {
 					8858CE0A25246A8500C246F6 = {
 						CreatedOnToolsVersion = 11.6;
+					};
+					88BF4C772570DE9900B8C265 = {
+						CreatedOnToolsVersion = 12.0.1;
 					};
 				};
 			};
@@ -112,6 +472,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = 8858CE0225246A8500C246F6;
 			productRefGroup = 8858CE0C25246A8500C246F6 /* Products */;
@@ -119,6 +480,7 @@
 			projectRoot = "";
 			targets = (
 				8858CE0A25246A8500C246F6 /* Watpad */,
+				88BF4C772570DE9900B8C265 /* ShareExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -128,33 +490,159 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8858CE4C252470D400C246F6 /* Montserrat-ExtraBold.ttf in Resources */,
 				8858CE1E25246A8800C246F6 /* LaunchScreen.storyboard in Resources */,
+				8858CE49252470D400C246F6 /* Montserrat-BlackItalic.ttf in Resources */,
+				8858CE48252470D400C246F6 /* Montserrat-MediumItalic.ttf in Resources */,
+				8858CE42252470D400C246F6 /* Montserrat-BoldItalic.ttf in Resources */,
 				8858CE1B25246A8800C246F6 /* Assets.xcassets in Resources */,
+				8858CE50252470D400C246F6 /* Montserrat-Italic.ttf in Resources */,
+				8858CE52252470D400C246F6 /* Montserrat-ExtraBoldItalic.ttf in Resources */,
 				8858CE1625246A8500C246F6 /* Main.storyboard in Resources */,
+				8858CE43252470D400C246F6 /* Montserrat-Light.ttf in Resources */,
+				8858CE4F252470D400C246F6 /* Montserrat-Regular.ttf in Resources */,
+				8858CE44252470D400C246F6 /* Montserrat-ThinItalic.ttf in Resources */,
+				8858CE40252470D400C246F6 /* Montserrat-LightItalic.ttf in Resources */,
+				88B918D42546CE8C00CCB13E /* categories.json in Resources */,
+				8858CE51252470D400C246F6 /* Montserrat-SemiBoldItalic.ttf in Resources */,
+				8858CE4B252470D400C246F6 /* Montserrat-ExtraLightItalic.ttf in Resources */,
+				8858CE4A252470D400C246F6 /* Montserrat-SemiBold.ttf in Resources */,
+				8858CE4E252470D400C246F6 /* Montserrat-Black.ttf in Resources */,
+				8858CE4D252470D400C246F6 /* OFL.txt in Resources */,
+				8858CE46252470D400C246F6 /* Montserrat-Thin.ttf in Resources */,
+				8858CE47252470D400C246F6 /* Montserrat-Bold.ttf in Resources */,
+				8858CE41252470D400C246F6 /* Montserrat-Medium.ttf in Resources */,
+				8858CE2625246C2A00C246F6 /* UserDefaultsKeys in Resources */,
+				8858CE45252470D400C246F6 /* Montserrat-ExtraLight.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88BF4C762570DE9900B8C265 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88BF4C7E2570DE9900B8C265 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		27EE6D479EC210BA5971C8D3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Watpad-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		74E4D41C9E812F2A43409BD6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Watpad/Pods-Watpad-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Watpad/Pods-Watpad-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Watpad/Pods-Watpad-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8858CE0725246A8500C246F6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8880D3472545F17B0049DC90 /* ReadingController.swift in Sources */,
+				8880B1352533788A00A78747 /* Tab1BookCollectionViewCell.swift in Sources */,
+				888CB442254FD21D0019572D /* BookInfoChaptersTableViewCell.swift in Sources */,
+				88A2EFB025612DC300E3233D /* CategoryController.swift in Sources */,
+				888CB44525501A4F0019572D /* AuthorInfoController.swift in Sources */,
+				88A4177A2555D2E400DADA53 /* ChooseMusicController.swift in Sources */,
+				88640CA125321B9D00DEEF0A /* Tab2BookCollectionViewCell.swift in Sources */,
+				8880D34D2545F5F90049DC90 /* NotesController.swift in Sources */,
+				88A417742555977A00DADA53 /* TextController.swift in Sources */,
+				88422A2325247906000889DF /* RegistrationController.swift in Sources */,
+				8858CE2A25246C8400C246F6 /* Extensions.swift in Sources */,
+				884EBF9D25666E7E00A9E4AA /* DesignOfView.swift in Sources */,
+				88422A2525247C8B000889DF /* PasswordRecoveryController.swift in Sources */,
+				8821A3AA255A826000A35702 /* EditTextController.swift in Sources */,
+				88640C9525321B2000DEEF0A /* Tab1Controller.swift in Sources */,
+				888CB43F254FD03A0019572D /* BookInfoController.swift in Sources */,
+				88A417772555BFF700DADA53 /* CardViewController.swift in Sources */,
+				88E6956025474F4400FC9491 /* CreateBookController.swift in Sources */,
+				88640C9225321B0C00DEEF0A /* Tab3Controller.swift in Sources */,
+				888B71CE2530B68B009F62F1 /* TabBarController.swift in Sources */,
+				88422A20252474A9000889DF /* LoginController.swift in Sources */,
+				88694E8D2549CD2200E9AA83 /* MyBookChapterTableViewCell.swift in Sources */,
+				8880D3502545F6260049DC90 /* NotesTableViewCell.swift in Sources */,
+				88D46F3D255D6CFD0050CA47 /* ChooseMusicTableViewCell.swift in Sources */,
+				8880D3442545F0210049DC90 /* MainNavigationController.swift in Sources */,
+				88A2EFBA2561BA1900E3233D /* MusicCardViewTableViewCell.swift in Sources */,
+				88EA032125497645004CA574 /* EditMyBookChaptersController.swift in Sources */,
+				8821A3A7255A7AC100A35702 /* BookInfoCollectionViewCell.swift in Sources */,
 				8858CE1925246A8500C246F6 /* Watpad.xcdatamodeld in Sources */,
+				88EEDCEC255C38C600096B00 /* ChaptersInCardViewTableViewCell.swift in Sources */,
+				889B88BF252481E80013F524 /* ValidationController.swift in Sources */,
 				8858CE1325246A8500C246F6 /* ViewController.swift in Sources */,
+				880660ED253499BA00ECC4F2 /* Tab1BookTableViewCell.swift in Sources */,
+				88A2EFB325612ED600E3233D /* CategoryControllerTableViewCell.swift in Sources */,
+				8880D34A2545F2280049DC90 /* ReadingTableViewCell.swift in Sources */,
+				8880B1382533789E00A78747 /* Tab1CategoryCollectionViewCell.swift in Sources */,
+				8803CF98256C298B003F8215 /* WelcomeController.swift in Sources */,
+				888CB44825501D3D0019572D /* AuthorInfoCollectionViewCell.swift in Sources */,
+				8858CE2825246C4700C246F6 /* GlobalVariables.swift in Sources */,
 				8858CE0F25246A8500C246F6 /* AppDelegate.swift in Sources */,
-				8858CE1125246A8500C246F6 /* SceneDelegate.swift in Sources */,
+				88640C9825321B2300DEEF0A /* Tab2Controller.swift in Sources */,
+				88AA98632542FB5F00772FE8 /* EditProfileController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88BF4C742570DE9900B8C265 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88BF4C7B2570DE9900B8C265 /* ShareViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		88BF4C812570DE9900B8C265 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 88BF4C772570DE9900B8C265 /* ShareExtension */;
+			targetProxy = 88BF4C802570DE9900B8C265 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		8858CE1425246A8500C246F6 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				8858CE1525246A8500C246F6 /* Base */,
+				88251D012572675100A391CF /* ru */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -167,6 +655,14 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
+		88BF4C7C2570DE9900B8C265 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				88BF4C7D2570DE9900B8C265 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -174,6 +670,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -224,9 +721,12 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/IMac/TOP_SECRET/XCode Data/Watpad/Watpad/Spotify.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_PRECOMPILE_BRIDGING_HEADER = NO;
 			};
 			name = Debug;
 		};
@@ -234,6 +734,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -277,46 +778,229 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = "";
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/IMac/TOP_SECRET/XCode Data/Watpad/Watpad/Spotify.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_PRECOMPILE_BRIDGING_HEADER = NO;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		8858CE2325246A8800C246F6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E700390A5C6B40722911F131 /* Pods-Watpad.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Watpad/Watpad.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 25F2R883U6;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S4N9N5DMJM;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Watpad",
+				);
 				INFOPLIST_FILE = Watpad/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.XCode.Watpad;
+				MARKETING_VERSION = 1.0.4;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-l\"c++\"",
+					"-l\"stdc++\"",
+					"-l\"z\"",
+					"-framework",
+					"\"Accelerate\"",
+					"-framework",
+					"\"Alamofire\"",
+					"-framework",
+					"\"CFNetwork\"",
+					"-framework",
+					"\"CGMath\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"FBSDKCoreKit\"",
+					"-framework",
+					"\"FBSDKLoginKit\"",
+					"-framework",
+					"\"FBSDKPlacesKit\"",
+					"-framework",
+					"\"FBSDKShareKit\"",
+					"-framework",
+					"\"FloatingTabBarController\"",
+					"-framework",
+					"\"Kingfisher\"",
+					"-framework",
+					"\"SwiftyJSON\"",
+					"-weak_framework",
+					"\"Accelerate\"",
+					"-weak_framework",
+					"\"Accounts\"",
+					"-weak_framework",
+					"\"AudioToolbox\"",
+					"-weak_framework",
+					"\"CoreGraphics\"",
+					"-weak_framework",
+					"\"CoreLocation\"",
+					"-weak_framework",
+					"\"Foundation\"",
+					"-weak_framework",
+					"\"QuartzCore\"",
+					"-weak_framework",
+					"\"Security\"",
+					"-weak_framework",
+					"\"Social\"",
+					"-weak_framework",
+					"\"UIKit\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kz.BOMU;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/IMac/TOP_SECRET/XCode Data/Watpad/Watpad/Watpad-Bridging-Header.h";
+				SWIFT_PRECOMPILE_BRIDGING_HEADER = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		8858CE2425246A8800C246F6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E34EE5B508CB8213E285973E /* Pods-Watpad.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Watpad/Watpad.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 25F2R883U6;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S4N9N5DMJM;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Watpad",
+				);
 				INFOPLIST_FILE = Watpad/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.XCode.Watpad;
+				MARKETING_VERSION = 1.0.4;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-l\"c++\"",
+					"-l\"stdc++\"",
+					"-l\"z\"",
+					"-framework",
+					"\"Accelerate\"",
+					"-framework",
+					"\"Alamofire\"",
+					"-framework",
+					"\"CFNetwork\"",
+					"-framework",
+					"\"CGMath\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"FBSDKCoreKit\"",
+					"-framework",
+					"\"FBSDKLoginKit\"",
+					"-framework",
+					"\"FBSDKPlacesKit\"",
+					"-framework",
+					"\"FBSDKShareKit\"",
+					"-framework",
+					"\"FloatingTabBarController\"",
+					"-framework",
+					"\"Kingfisher\"",
+					"-framework",
+					"\"SwiftyJSON\"",
+					"-weak_framework",
+					"\"Accelerate\"",
+					"-weak_framework",
+					"\"Accounts\"",
+					"-weak_framework",
+					"\"AudioToolbox\"",
+					"-weak_framework",
+					"\"CoreGraphics\"",
+					"-weak_framework",
+					"\"CoreLocation\"",
+					"-weak_framework",
+					"\"Foundation\"",
+					"-weak_framework",
+					"\"QuartzCore\"",
+					"-weak_framework",
+					"\"Security\"",
+					"-weak_framework",
+					"\"Social\"",
+					"-weak_framework",
+					"\"UIKit\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kz.BOMU;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/IMac/TOP_SECRET/XCode Data/Watpad/Watpad/Watpad-Bridging-Header.h";
+				SWIFT_PRECOMPILE_BRIDGING_HEADER = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		88BF4C842570DE9A00B8C265 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_ENTITLEMENTS = ShareExtension/ShareExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S4N9N5DMJM;
+				INFOPLIST_FILE = ShareExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.4;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kz.BOMU.ShareExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		88BF4C852570DE9A00B8C265 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_ENTITLEMENTS = ShareExtension/ShareExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S4N9N5DMJM;
+				INFOPLIST_FILE = ShareExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.4;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kz.BOMU.ShareExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -337,6 +1021,15 @@
 			buildConfigurations = (
 				8858CE2325246A8800C246F6 /* Debug */,
 				8858CE2425246A8800C246F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		88BF4C832570DE9A00B8C265 /* Build configuration list for PBXNativeTarget "ShareExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88BF4C842570DE9A00B8C265 /* Debug */,
+				88BF4C852570DE9A00B8C265 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
